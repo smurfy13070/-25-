@@ -1,0 +1,6 @@
+print("Гуси (2 лапы)\tКролики (4 лапы)")
+for i in range(33):
+    remaining_legs = 64 - (i * 2)
+    if remaining_legs % 4 == 0:
+        rabbits = remaining_legs // 4
+        print(f"{i}\t\t\t\t\t{rabbits}")
