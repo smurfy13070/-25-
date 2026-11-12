@@ -1,0 +1,8 @@
+money = int(input())
+heads = int(input())
+
+for bulls in range(1, heads + 1):
+    for cows in range(0, heads - bulls + 1):
+        calves = heads - bulls - cows
+        if calves >= 0 and 20 * bulls + 10 * cows + 5 * calves == money:
+            print(bulls, cows, calves)
