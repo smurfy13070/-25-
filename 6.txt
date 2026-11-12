@@ -1,8 +1,0 @@
-print("Быки\tКоровы\tТелята")
-for bulls in range(11):
-    for cows in range(21):
-        calves = 100 - bulls - cows
-        if calves >= 0:
-            total_cost = (bulls * 10) + (cows * 5) + (calves * 0.5)
-            if total_cost == 100:
-                print(f"{bulls}\t\t{cows}\t\t{calves}")
