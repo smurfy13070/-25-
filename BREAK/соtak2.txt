@@ -1,0 +1,10 @@
+line = 1
+cot = -1
+while True:
+    text = input()
+    if text == "stop":
+        print(cot)
+        break
+    if cot == -1 and ("cat" in text or "CAT" in text):
+        cot = line
+        line += 1

@@ -1,0 +1,19 @@
+n = int(input())
+prev_h = 0
+answer = -1
+
+for i in range(n):
+    b = int(input())
+
+    h = b % 256
+    r = (b // 256) % 256
+    m = b // 256 // 256
+
+    check = (37 * (m + r + prev_h)) % 256
+
+    if answer == -1 and (h >= 100 or h != check):
+        answer = i
+
+    prev_h = h
+
+print(answer)

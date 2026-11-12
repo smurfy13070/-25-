@@ -1,0 +1,19 @@
+prev = int(input())
+bought = False
+
+while True:
+    p = int(input())
+    if p == 0:
+        break
+
+    if not bought:
+        if p > prev:
+            buy = p
+            bought = True
+    else:
+        if p < prev:
+            sell = p
+            print(buy, sell, sell - buy)
+            break
+
+    prev = p

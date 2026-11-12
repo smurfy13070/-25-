@@ -1,0 +1,43 @@
+while True:
+    a = int(input())
+    op = input()
+
+    if op == "x":
+        print(a)
+        break
+
+    if op == "!":
+        if a < 0:
+            continue
+        fact = 1
+        for k in range(2, a + 1):
+            fact *= k
+        print(fact)
+        continue
+
+    b = int(input())
+
+    if op == "+":
+        print(a + b)
+    elif op == "-":
+        print(a - b)
+    elif op == "*":
+        print(a * b)
+    elif op == "/":
+        if b != 0:
+            # целочисленное деление с округлением к нулю
+            q = abs(a) // abs(b)
+            if (a < 0) != (b < 0):
+                q = -q
+            print(q)
+    elif op == "%":
+        if b != 0:
+            q = abs(a) // abs(b)
+            if (a < 0) != (b < 0):
+                q = -q
+            print(a - q * b)
+
+
+
+
+

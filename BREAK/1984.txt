@@ -1,0 +1,12 @@
+n = int(input())
+war = "Евразия"
+peace = "Остазия"
+
+for _ in range(n):
+    cmd = input().strip()
+    if cmd == "С кем война?":
+        print(war)
+    elif cmd == "С кем мир?":
+        print(peace)
+    elif cmd == "Меняем":
+        war, peace = peace, war

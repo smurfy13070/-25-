@@ -1,0 +1,11 @@
+import math
+
+L = float(input())
+v = float(input())
+turns = 0
+
+while L > v + 0.01:
+    L = math.sqrt((L - v) ** 2 + v * v)
+    turns += 1
+
+print(turns)

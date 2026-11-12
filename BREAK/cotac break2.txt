@@ -1,0 +1,11 @@
+line_no = 0
+
+while True:
+    s = input()
+    if s.strip().upper() == "СТОП":
+        print(-1)
+        break
+    line_no += 1
+    if "кот" in s.lower():
+        print(line_no)
+        break
